@@ -1,13 +1,30 @@
 /*
+    Font-Face declarations
+*/
+
+@font-face {
+    font-family: 'interweb';
+    font-weight: 400;
+    src: url("../Fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: 'interweb';
+    font-weight: 700;
+    src: url("../Fonts/Inter-Bold.woff2") format("woff2");
+}
+
+/*
     Elements: Page
     ---
     Default markup for page level elements
 */
 
 html {
+    font-family: "droid-serif", georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #111;
     padding: 48px 24px 24px;
 }
@@ -25,7 +42,7 @@ body {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #00E6A1;
     color: white;
     text-shadow: none;
 }
@@ -47,8 +64,14 @@ img {
     Default markup for typographic elements
 */
 
+h1,
+h2,
+h3{
+    font-family: "interweb","Helvetica Neue", Helvetica, arial, sans-serif;
+}
+
 h1 {
-    font-family: "Times New Roman", serif;
+    font-family: "playfair", "Times New Roman", serif;
     font-size: 36px;
     font-weight: normal;
     line-height: 40px;
@@ -123,18 +146,18 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #007DB3;
     transition: all .1s ease-in-out;
 }
 
 a:visited,
 a:active {
-    color: BlueViolet;
+    color: #8A9499;
 }
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #5C6366;
 }
 
 /* Small devices (landscape phones, 576px and up) */
